@@ -1,0 +1,5 @@
+-- ============================================================================
+-- database/seed.sql
+-- TODO: Query INSERT data awal akun admin & pricelist asli dari mitra
+--       (Almira Baby and Kids Spa - Bidan Yunis Irna Tristanti)
+-- ============================================================================

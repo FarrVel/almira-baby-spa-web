@@ -1,0 +1,6 @@
+-- ============================================================================
+-- database/schema.sql
+-- TODO: Query pembuatan tabel `admin` (password di-hash) & tabel `layanan`
+-- Kolom wajib `layanan`: id, nama_layanan, kategori, harga, deskripsi (maks 300),
+--                        foto_path, alt_text, status_aktif (boolean)
+-- ============================================================================

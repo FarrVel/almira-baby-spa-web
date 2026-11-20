@@ -1,0 +1,22 @@
+{
+  "name": "almira-baby-spa-web",
+  "version": "1.0.0",
+  "description": "Website Profil dan Katalog Layanan Almira Baby and Kids Spa (Mojosari, Mojokerto) - Proyek Akhir Pemrograman Web (M) Kelompok 14",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "npx serve public"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.14.0",
+    "@vercel/blob": "^0.27.0",
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "vercel": "^39.0.0"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
