@@ -19,8 +19,8 @@ Repositori proyek akhir mata kuliah **ER234302 Pemrograman Web (M)** — Semeste
 | No | Nama Lengkap | NRP | Peran Utama | Tanggung Jawab Teknis |
 | :-: | :--- | :---: | :---: | :--- |
 | 1 | **Farrel Aryasatya Raharjo** | `5053251036` | Front-end | Halaman publik statis, integrasi katalog, SEO dasar, responsivitas `360px`, & deployment Vercel |
-| 2 | **Nathan Alden** | `5053251024` | UI/UX Design | Wireframe, desain antarmuka Panel Admin, interaksi form CRUD, & validasi pesan error di halaman |
-| 3 | **Deara Briliana Putri** | `5053251027` | Back-end | Skema database SQLite (Turso/LibSQL), endpoint API serverless (`/api/auth`, `/api/layanan`, `/api/upload`), & keamanan hash password (`bcrypt`) |
+| 2 | **Nathan Alden** | `5053251024` | Back-end | Wireframe, desain antarmuka Panel Admin, interaksi form CRUD, & validasi pesan error di halaman |
+| 3 | **Deara Briliana Putri** | `5053251027` | UI-UX Design | Skema database SQLite (Turso/LibSQL), endpoint API serverless (`/api/auth`, `/api/layanan`, `/api/upload`), & keamanan hash password (`bcrypt`) |
 
 ---
 
