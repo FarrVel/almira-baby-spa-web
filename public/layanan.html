@@ -1,173 +1,219 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Paket Layanan | Almira Baby and Kids Spa</title>
-  <meta name="description" content="Daftar layanan dan harga pijat bayi, pijat anak, baby spa, kids spa, massage terapi, dan paket selapan di Almira Baby & Kids Spa, Mojosari.">
-  <link rel="stylesheet" href="/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paket Layanan | Almira Baby and Kids Spa</title>
+    <meta name="description"
+        content="Daftar layanan dan harga pijat bayi, pijat anak, baby spa, kids spa, massage terapi, dan paket selapan di Almira Baby & Kids Spa, Mojosari.">
+    <link rel="stylesheet" href="/css/style.css" />
 </head>
+
 <body>
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="index.html" aria-label="Almira Baby & Kids Spa">
-      <div class="logo">Logo</div>
-      <div class="brand-text"><strong>Almira</strong><span>Baby & Kids Spa</span></div>
-    </a>
-    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
-    <nav class="nav">
-      <a href="index.html">Beranda</a>
-      <a href="layanan.html" class="active">Layanan</a>
-      <a href="profil.html">Profil</a>
-      <a href="kontak.html">Kontak</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <div class="page-head">
-    <h1>Paket Layanan & Harga</h1>
-    <p>Pilih layanan untuk si kecil. Harga selalu diperbarui pengelola.</p>
-  </div>
-
-  <section style="padding:30px 0 40px">
-    <div class="wrap">
-      <div class="toolbar">
-        <div class="filters">
-          <button class="chip active" data-filter="semua">Semua</button>
-          <button class="chip" data-filter="pijat">Pijat</button>
-          <button class="chip" data-filter="spa">Spa</button>
-          <button class="chip" data-filter="terapi">Terapi</button>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="index.html" aria-label="Almira Baby & Kids Spa">
+                <div class="logo">Logo</div>
+                <div class="brand-text"><strong>Almira</strong><span>Baby & Kids Spa</span></div>
+            </a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
+            <nav class="nav">
+                <a href="index.html">Beranda</a>
+                <a href="layanan.html" class="active">Layanan</a>
+                <a href="profil.html">Profil</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
         </div>
-        <input class="search" id="search" type="search" placeholder="Cari layanan... (opsional)" aria-label="Cari layanan">
-      </div>
+    </header>
 
-      <div class="catalog">
+    <main>
+        <div class="page-head">
+            <h1>Paket Layanan & Harga</h1>
+            <p>Pilih layanan untuk si kecil. Harga selalu diperbarui pengelola.</p>
+        </div>
 
-        <!-- 1. Baby & Kids Massage -->
-        <article class="card" data-cat="pijat">
-          <div class="ph" role="img" aria-label="Foto layanan pijat bayi dan anak">FOTO LAYANAN<small>(alt text wajib)</small></div>
-          <span class="tag">Pijat</span>
-          <div class="card-title"><h3>Baby & Kids Massage</h3></div>
-          <p class="card-desc">Pijat lembut untuk bayi hingga anak-anak, disesuaikan dengan tahapan usianya. Membantu si kecil lebih rileks dan nyaman serta mendukung tumbuh kembangnya.</p>
-          <ul class="price-list">
-            <li><span>0–1 th</span><span>Rp35.000</span></li>
-            <li><span>1–2,5 th</span><span>Rp40.000</span></li>
-            <li><span>2,5–5 th</span><span>Rp45.000</span></li>
-            <li><span>5–7 th</span><span>Rp50.000</span></li>
-            <li><span>7 th ke atas</span><span>Rp60.000</span></li>
-          </ul>
-          <div class="card-foot">
-            <span></span>
-            <a class="btn btn-sm" target="_blank" rel="noopener" href="https://wa.me/6281332487575?text=Halo%20Almira%2C%20saya%20ingin%20tanya%20layanan%20Baby%20%26%20Kids%20Massage">Tanya via WA</a>
-          </div>
-        </article>
+        <section style="padding:30px 0 40px">
+            <div class="wrap">
+                <div class="toolbar">
+                    <div class="filters">
+                        <button class="chip active" data-filter="semua">Semua</button>
+                        <button class="chip" data-filter="pijat">Pijat</button>
+                        <button class="chip" data-filter="spa">Spa</button>
+                        <button class="chip" data-filter="terapi">Terapi</button>
+                    </div>
+                    <input class="search" id="search" type="search" placeholder="Cari layanan... (opsional)"
+                        aria-label="Cari layanan">
+                </div>
 
-        <!-- 2. Baby Spa -->
-        <article class="card" data-cat="spa">
-          <div class="ph" role="img" aria-label="Foto layanan baby spa">FOTO LAYANAN<small>(alt text wajib)</small></div>
-          <span class="tag">Spa</span>
-          <div class="card-title"><h3>Baby Spa</h3><span class="badge">Wajib Reservasi</span></div>
-          <p class="card-desc">Rangkaian relaksasi lengkap untuk bayi usia 3 bulan–1 tahun: senam ringan (gymball), berenang, mandi air hangat, dan pijat bayi. Melatih motorik dan kekuatan otot sejak dini.</p>
-          <div class="card-foot">
-            <span class="price">Rp85.000</span>
-            <a class="btn btn-sm" target="_blank" rel="noopener" href="https://wa.me/6281332487575?text=Halo%20Almira%2C%20saya%20ingin%20reservasi%20Baby%20Spa">Tanya via WA</a>
-          </div>
-        </article>
+                <div class="catalog">
 
-        <!-- 3. Kids Spa -->
-        <article class="card" data-cat="spa">
-          <div class="ph" role="img" aria-label="Foto layanan kids spa">FOTO LAYANAN<small>(alt text wajib)</small></div>
-          <span class="tag">Spa</span>
-          <div class="card-title"><h3>Kids Spa</h3></div>
-          <p class="card-desc">Pengalaman spa yang menyenangkan untuk anak usia 2 tahun ke atas. Sudah termasuk pijat relaksasi, masker coklat, berendam bubble, mandi bilas, dan nail art.</p>
-          <div class="card-foot">
-            <span class="price">Rp100.000</span>
-            <a class="btn btn-sm" target="_blank" rel="noopener" href="https://wa.me/6281332487575?text=Halo%20Almira%2C%20saya%20ingin%20tanya%20layanan%20Kids%20Spa">Tanya via WA</a>
-          </div>
-        </article>
+                    <!-- 1. Baby & Kids Massage -->
+                    <article class="card" data-cat="pijat">
+                        <div class="ph" role="img" aria-label="Foto layanan pijat bayi dan anak">FOTO LAYANAN<small>(alt
+                                text wajib)</small></div>
+                        <span class="tag">Pijat</span>
+                        <div class="card-title">
+                            <h3>Baby & Kids Massage</h3>
+                        </div>
+                        <p class="card-desc">Pijat lembut untuk bayi hingga anak-anak, disesuaikan dengan tahapan
+                            usianya. Membantu si kecil lebih rileks dan nyaman serta mendukung tumbuh kembangnya.</p>
+                        <ul class="price-list">
+                            <li><span>0–1 th</span><span>Rp35.000</span></li>
+                            <li><span>1–2,5 th</span><span>Rp40.000</span></li>
+                            <li><span>2,5–5 th</span><span>Rp45.000</span></li>
+                            <li><span>5–7 th</span><span>Rp50.000</span></li>
+                            <li><span>7 th ke atas</span><span>Rp60.000</span></li>
+                        </ul>
+                        <div class="card-foot">
+                            <span></span>
+                            <a class="btn btn-sm" target="_blank" rel="noopener"
+                                href="https://wa.me/6281332487575?text=Halo%20Almira%2C%20saya%20ingin%20tanya%20layanan%20Baby%20%26%20Kids%20Massage">Tanya
+                                via WA</a>
+                        </div>
+                    </article>
 
-        <!-- 4. Massage Terapi -->
-        <article class="card" data-cat="pijat">
-          <div class="ph" role="img" aria-label="Foto layanan massage terapi">FOTO LAYANAN<small>(alt text wajib)</small></div>
-          <span class="tag">Pijat</span>
-          <div class="card-title"><h3>Massage Terapi</h3></div>
-          <p class="card-desc">Pijat kesehatan untuk membantu meredakan keluhan ringan pada anak dengan teknik yang aman dan menenangkan.</p>
-          <ul class="price-list">
-            <li><span>Terapi Batuk Pilek (pijat, nebu, sinar moksa)</span><span>Rp70.000</span></li>
-            <li><span>Nafsu Makan</span><span>Rp55.000</span></li>
-            <li><span>Diare</span><span>Rp50.000</span></li>
-            <li><span>Sembelit</span><span>Rp50.000</span></li>
-            <li><span>Bayi Sulit Tidur</span><span>Rp50.000</span></li>
-            <li><span>Stimulasi Berjalan</span><span>Rp50.000</span></li>
-          </ul>
-          <p class="note">Catatan: anak usia di atas 3 tahun dikenakan biaya tambahan Rp10.000.</p>
-          <div class="card-foot">
-            <span></span>
-            <a class="btn btn-sm" target="_blank" rel="noopener" href="https://wa.me/6281332487575?text=Halo%20Almira%2C%20saya%20ingin%20tanya%20layanan%20Massage%20Terapi">Tanya via WA</a>
-          </div>
-        </article>
+                    <!-- 2. Baby Spa -->
+                    <article class="card" data-cat="spa">
+                        <div class="ph" role="img" aria-label="Foto layanan baby spa">FOTO LAYANAN<small>(alt text
+                                wajib)</small></div>
+                        <span class="tag">Spa</span>
+                        <div class="card-title">
+                            <h3>Baby Spa</h3><span class="badge">Wajib Reservasi</span>
+                        </div>
+                        <p class="card-desc">Rangkaian relaksasi lengkap untuk bayi usia 3 bulan–1 tahun: senam ringan
+                            (gymball), berenang, mandi air hangat, dan pijat bayi. Melatih motorik dan kekuatan otot
+                            sejak dini.</p>
+                        <div class="card-foot">
+                            <span class="price">Rp85.000</span>
+                            <a class="btn btn-sm" target="_blank" rel="noopener"
+                                href="https://wa.me/6281332487575?text=Halo%20Almira%2C%20saya%20ingin%20reservasi%20Baby%20Spa">Tanya
+                                via WA</a>
+                        </div>
+                    </article>
 
-        <!-- 5. Paket Selapan -->
-        <article class="card" data-cat="terapi">
-          <div class="ph" role="img" aria-label="Foto paket selapan">FOTO LAYANAN<small>(alt text wajib)</small></div>
-          <span class="tag">Terapi</span>
-          <div class="card-title"><h3>Paket Selapan</h3></div>
-          <p class="card-desc">Paket perawatan tradisional untuk menyambut selapan (35 hari) si kecil: cukur rambut, mandi bilas, bersihkan lidah dan telinga, pijat lembut, dan potong kuku.</p>
-          <div class="card-foot">
-            <span class="price">Rp75.000</span>
-            <a class="btn btn-sm" target="_blank" rel="noopener" href="https://wa.me/6281332487575?text=Halo%20Almira%2C%20saya%20ingin%20tanya%20Paket%20Selapan">Tanya via WA</a>
-          </div>
-        </article>
+                    <!-- 3. Kids Spa -->
+                    <article class="card" data-cat="spa">
+                        <div class="ph" role="img" aria-label="Foto layanan kids spa">FOTO LAYANAN<small>(alt text
+                                wajib)</small></div>
+                        <span class="tag">Spa</span>
+                        <div class="card-title">
+                            <h3>Kids Spa</h3>
+                        </div>
+                        <p class="card-desc">Pengalaman spa yang menyenangkan untuk anak usia 2 tahun ke atas. Sudah
+                            termasuk pijat relaksasi, masker coklat, berendam bubble, mandi bilas, dan nail art.</p>
+                        <div class="card-foot">
+                            <span class="price">Rp100.000</span>
+                            <a class="btn btn-sm" target="_blank" rel="noopener"
+                                href="https://wa.me/6281332487575?text=Halo%20Almira%2C%20saya%20ingin%20tanya%20layanan%20Kids%20Spa">Tanya
+                                via WA</a>
+                        </div>
+                    </article>
 
-        <!-- 6. Layanan lain-lain -->
-        <article class="card" data-cat="lainnya">
-          <div class="ph" role="img" aria-label="Foto layanan lain-lain">FOTO LAYANAN<small>(alt text wajib)</small></div>
-          <span class="tag">Lainnya</span>
-          <div class="card-title"><h3>Layanan Lain-lain</h3></div>
-          <p class="card-desc">Perawatan tambahan satuan yang praktis dan higienis.</p>
-          <ul class="price-list">
-            <li><span>Nebulizer</span><span>Rp25.000</span></li>
-            <li><span>Cukur Gundul</span><span>Rp30.000</span></li>
-            <li><span>Tindik Bayi</span><span>Rp30.000</span></li>
-            <li><span>Potong Kuku</span><span>Rp20.000</span></li>
-            <li><span>Hydro Moksa</span><span>Rp10.000</span></li>
-            <li><span>Nail Art Anak</span><span>Rp20.000</span></li>
-          </ul>
-          <div class="card-foot">
-            <span></span>
-            <a class="btn btn-sm" target="_blank" rel="noopener" href="https://wa.me/6281332487575?text=Halo%20Almira%2C%20saya%20ingin%20tanya%20layanan%20tambahan">Tanya via WA</a>
-          </div>
-        </article>
-      </div>
+                    <!-- 4. Massage Terapi -->
+                    <article class="card" data-cat="pijat">
+                        <div class="ph" role="img" aria-label="Foto layanan massage terapi">FOTO LAYANAN<small>(alt text
+                                wajib)</small></div>
+                        <span class="tag">Pijat</span>
+                        <div class="card-title">
+                            <h3>Massage Terapi</h3>
+                        </div>
+                        <p class="card-desc">Pijat kesehatan untuk membantu meredakan keluhan ringan pada anak dengan
+                            teknik yang aman dan menenangkan.</p>
+                        <ul class="price-list">
+                            <li><span>Terapi Batuk Pilek (pijat, nebu, sinar moksa)</span><span>Rp70.000</span></li>
+                            <li><span>Nafsu Makan</span><span>Rp55.000</span></li>
+                            <li><span>Diare</span><span>Rp50.000</span></li>
+                            <li><span>Sembelit</span><span>Rp50.000</span></li>
+                            <li><span>Bayi Sulit Tidur</span><span>Rp50.000</span></li>
+                            <li><span>Stimulasi Berjalan</span><span>Rp50.000</span></li>
+                        </ul>
+                        <p class="note">Catatan: anak usia di atas 3 tahun dikenakan biaya tambahan Rp10.000.</p>
+                        <div class="card-foot">
+                            <span></span>
+                            <a class="btn btn-sm" target="_blank" rel="noopener"
+                                href="https://wa.me/6281332487575?text=Halo%20Almira%2C%20saya%20ingin%20tanya%20layanan%20Massage%20Terapi">Tanya
+                                via WA</a>
+                        </div>
+                    </article>
 
-      <p class="no-result">Layanan tidak ditemukan. Coba kata kunci lain.</p>
+                    <!-- 5. Paket Selapan -->
+                    <article class="card" data-cat="terapi">
+                        <div class="ph" role="img" aria-label="Foto paket selapan">FOTO LAYANAN<small>(alt text
+                                wajib)</small></div>
+                        <span class="tag">Terapi</span>
+                        <div class="card-title">
+                            <h3>Paket Selapan</h3>
+                        </div>
+                        <p class="card-desc">Paket perawatan tradisional untuk menyambut selapan (35 hari) si kecil:
+                            cukur rambut, mandi bilas, bersihkan lidah dan telinga, pijat lembut, dan potong kuku.</p>
+                        <div class="card-foot">
+                            <span class="price">Rp75.000</span>
+                            <a class="btn btn-sm" target="_blank" rel="noopener"
+                                href="https://wa.me/6281332487575?text=Halo%20Almira%2C%20saya%20ingin%20tanya%20Paket%20Selapan">Tanya
+                                via WA</a>
+                        </div>
+                    </article>
 
-      <div class="reserve">
-        <h2>Ingin reservasi Baby Spa?</h2>
-        <a class="btn" href="https://wa.me/6281332487575?text=Halo%20Almira%2C%20saya%20ingin%20reservasi%20Baby%20Spa" target="_blank" rel="noopener">Hubungi WhatsApp</a>
-      </div>
-    </div>
-  </section>
-</main>
+                    <!-- 6. Layanan lain-lain -->
+                    <article class="card" data-cat="lainnya">
+                        <div class="ph" role="img" aria-label="Foto layanan lain-lain">FOTO LAYANAN<small>(alt text
+                                wajib)</small></div>
+                        <span class="tag">Lainnya</span>
+                        <div class="card-title">
+                            <h3>Layanan Lain-lain</h3>
+                        </div>
+                        <p class="card-desc">Perawatan tambahan satuan yang praktis dan higienis.</p>
+                        <ul class="price-list">
+                            <li><span>Nebulizer</span><span>Rp25.000</span></li>
+                            <li><span>Cukur Gundul</span><span>Rp30.000</span></li>
+                            <li><span>Tindik Bayi</span><span>Rp30.000</span></li>
+                            <li><span>Potong Kuku</span><span>Rp20.000</span></li>
+                            <li><span>Hydro Moksa</span><span>Rp10.000</span></li>
+                            <li><span>Nail Art Anak</span><span>Rp20.000</span></li>
+                        </ul>
+                        <div class="card-foot">
+                            <span></span>
+                            <a class="btn btn-sm" target="_blank" rel="noopener"
+                                href="https://wa.me/6281332487575?text=Halo%20Almira%2C%20saya%20ingin%20tanya%20layanan%20tambahan">Tanya
+                                via WA</a>
+                        </div>
+                    </article>
+                </div>
 
-<footer class="site-footer has-scallop">
-  <div class="scallop-foot"></div>
-  <div class="wrap foot-grid">
-    <div class="foot-info">
-      <h3>Almira Baby & Kids Spa</h3>
-      <p>Gang Kavlingan No. RT 46 RW 12, Blok J, Randubango,<br>Kec. Mojosari, Kab. Mojokerto, Jawa Timur 61382</p>
-      <div class="btn-row" style="margin-top:60px">
-        <a class="btn btn-sm" href="https://wa.me/6281332487575" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn btn-sm btn-outline" href="https://instagram.com/almira.baby.spa_mojosari" target="_blank" rel="noopener">Instagram</a>
-      </div>
-    </div>
-    <div class="map-box foot-map">
-      <iframe title="Peta lokasi Almira Baby & Kids Spa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://maps.google.com/maps?q=Gang%20Kavlingan%20Randubango%20Mojosari%20Mojokerto&output=embed"></iframe>
-    </div>
-  </div>
-</footer>
-  <script src="/js/main.js"></script>
+                <p class="no-result">Layanan tidak ditemukan. Coba kata kunci lain.</p>
+
+                <div class="reserve">
+                    <h2>Ingin reservasi Baby Spa?</h2>
+                    <a class="btn"
+                        href="https://wa.me/6281332487575?text=Halo%20Almira%2C%20saya%20ingin%20reservasi%20Baby%20Spa"
+                        target="_blank" rel="noopener">Hubungi WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer has-scallop">
+        <div class="scallop-foot"></div>
+        <div class="wrap foot-grid">
+            <div class="foot-info">
+                <h3>Almira Baby & Kids Spa</h3>
+                <p>Gang Kavlingan No. RT 46 RW 12, Blok J, Randubango,<br>Kec. Mojosari, Kab. Mojokerto, Jawa Timur
+                    61382</p>
+                <div class="btn-row" style="margin-top:60px">
+                    <a class="btn btn-sm" href="https://wa.me/6281332487575" target="_blank" rel="noopener">WhatsApp</a>
+                    <a class="btn btn-sm btn-outline" href="https://instagram.com/almira.baby.spa_mojosari"
+                        target="_blank" rel="noopener">Instagram</a>
+                </div>
+            </div>
+            <div class="map-box foot-map">
+                <iframe title="Peta lokasi Almira Baby & Kids Spa" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://maps.google.com/maps?q=Gang%20Kavlingan%20Randubango%20Mojosari%20Mojokerto&output=embed"></iframe>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/main.js"></script>
 </body>
+
 </html>
