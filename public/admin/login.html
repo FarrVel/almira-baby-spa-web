@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login Admin | Almira Baby and Kids Spa</title>
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/css/admin.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Admin | Almira Baby and Kids Spa</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+    <link rel="stylesheet" href="/css/admin.css" />
 </head>
-<body>
-  <!-- TODO: 5a. Halaman Login Admin -->
-  <script src="/js/admin.js"></script>
+
+<body class="login">
+
+    <main class="login-card">
+        <div class="logo">Logo</div>
+        <h1>Login Admin</h1>
+        <p class="sub">Khusus pengelola Almira Baby & Kids Spa</p>
+
+        <!-- Tampil saat login gagal (mis. dari server: login.html?error=1) -->
+        <div class="alert" id="login-alert" role="alert" hidden>Username atau password salah. Silakan coba lagi.</div>
+
+        <form id="login-form" novalidate autocomplete="off">
+            <div class="field" id="f-username">
+                <label for="username">Username</label>
+                <input class="input" type="text" id="username" name="username" autocomplete="username"
+                    placeholder="Username">
+                <p class="field-error" hidden>Username wajib diisi.</p>
+            </div>
+
+            <div class="field" id="f-password">
+                <label for="password">Password</label>
+                <input class="input" type="password" id="password" name="password" autocomplete="current-password"
+                    placeholder="Password">
+                <p class="field-error" hidden>Password wajib diisi.</p>
+            </div>
+
+            <button class="btn btn-block" type="submit">Masuk</button>
+        </form>
+
+        <a class="back-link" href="../index.html">← Kembali ke website</a>
+    </main>
+
+    <script src="/js/admin.js"></script>
 </body>
+
 </html>
