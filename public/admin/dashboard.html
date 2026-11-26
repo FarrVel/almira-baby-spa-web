@@ -1,14 +1,187 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard Admin | Almira Baby and Kids Spa</title>
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/css/admin.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Admin | Almira Baby and Kids Spa</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+    <link rel="stylesheet" href="/css/admin.css" />
 </head>
+
 <body>
-  <!-- TODO: 5b. Halaman Panel Admin (CRUD layanan & validasi error di halaman) -->
-  <script src="/js/admin.js"></script>
+    <div class="app">
+
+        <aside class="sidebar">
+            <div class="me"><span class="avatar"></span>Admin Almira</div>
+            <a class="side-link active" href="dashboard.html">Layanan</a>
+            <a class="side-link" href="../index.html" target="_blank" rel="noopener">Lihat Website</a>
+            <div class="side-bottom"><a class="side-link" href="login.html">Keluar</a></div>
+        </aside>
+
+        <main class="main">
+            <div class="page-top">
+                <div>
+                    <h1>Kelola Layanan</h1>
+                    <p>Perubahan langsung tampil di halaman Layanan website</p>
+                </div>
+                <a class="btn" href="form.html">+ Tambah Layanan</a>
+            </div>
+
+            <div class="filters">
+                <input class="input search" id="q" type="search" placeholder="Cari nama layanan..."
+                    aria-label="Cari nama layanan">
+                <select class="select" id="f-kategori" aria-label="Filter kategori">
+                    <option value="">Kategori</option>
+                    <option value="pijat">Pijat</option>
+                    <option value="spa">Spa</option>
+                    <option value="terapi">Terapi</option>
+                    <option value="lainnya">Lainnya</option>
+                </select>
+                <select class="select" id="f-status" aria-label="Filter status">
+                    <option value="">Status</option>
+                    <option value="aktif">Aktif</option>
+                    <option value="nonaktif">Nonaktif</option>
+                </select>
+            </div>
+
+            <div class="table-wrap">
+                <div class="table-scroll">
+                    <table class="data">
+                        <thead>
+                            <tr>
+                                <th>Foto</th>
+                                <th>Nama Layanan</th>
+                                <th>Kategori</th>
+                                <th>Harga</th>
+                                <th>Status</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="rows">
+                            <tr data-id="1" data-nama="Baby & Kids Massage" data-kategori="pijat" data-status="aktif">
+                                <td>
+                                    <div class="thumb">foto</div>
+                                </td>
+                                <td class="name">Baby & Kids Massage</td>
+                                <td><span class="pill">Pijat</span></td>
+                                <td>Mulai Rp35.000</td>
+                                <td><label class="status"><span class="switch"><input type="checkbox" class="toggle"
+                                                checked aria-label="Aktifkan Baby & Kids Massage"><span
+                                                class="track"></span></span><span
+                                            class="status-text">Aktif</span></label></td>
+                                <td>
+                                    <div class="actions"><a class="btn btn-outline btn-sm"
+                                            href="form.html?id=1">Ubah</a><button
+                                            class="btn btn-danger btn-sm btn-delete" type="button">Hapus</button></div>
+                                </td>
+                            </tr>
+                            <tr data-id="2" data-nama="Baby Spa" data-kategori="spa" data-status="aktif">
+                                <td>
+                                    <div class="thumb">foto</div>
+                                </td>
+                                <td class="name">Baby Spa</td>
+                                <td><span class="pill">Spa</span></td>
+                                <td>Rp85.000</td>
+                                <td><label class="status"><span class="switch"><input type="checkbox" class="toggle"
+                                                checked aria-label="Aktifkan Baby Spa"><span
+                                                class="track"></span></span><span
+                                            class="status-text">Aktif</span></label></td>
+                                <td>
+                                    <div class="actions"><a class="btn btn-outline btn-sm"
+                                            href="form.html?id=2">Ubah</a><button
+                                            class="btn btn-danger btn-sm btn-delete" type="button">Hapus</button></div>
+                                </td>
+                            </tr>
+                            <tr data-id="3" data-nama="Kids Spa" data-kategori="spa" data-status="aktif">
+                                <td>
+                                    <div class="thumb">foto</div>
+                                </td>
+                                <td class="name">Kids Spa</td>
+                                <td><span class="pill">Spa</span></td>
+                                <td>Rp100.000</td>
+                                <td><label class="status"><span class="switch"><input type="checkbox" class="toggle"
+                                                checked aria-label="Aktifkan Kids Spa"><span
+                                                class="track"></span></span><span
+                                            class="status-text">Aktif</span></label></td>
+                                <td>
+                                    <div class="actions"><a class="btn btn-outline btn-sm"
+                                            href="form.html?id=3">Ubah</a><button
+                                            class="btn btn-danger btn-sm btn-delete" type="button">Hapus</button></div>
+                                </td>
+                            </tr>
+                            <tr data-id="4" data-nama="Massage Terapi" data-kategori="pijat" data-status="aktif">
+                                <td>
+                                    <div class="thumb">foto</div>
+                                </td>
+                                <td class="name">Massage Terapi</td>
+                                <td><span class="pill">Pijat</span></td>
+                                <td>Mulai Rp50.000</td>
+                                <td><label class="status"><span class="switch"><input type="checkbox" class="toggle"
+                                                checked aria-label="Aktifkan Massage Terapi"><span
+                                                class="track"></span></span><span
+                                            class="status-text">Aktif</span></label></td>
+                                <td>
+                                    <div class="actions"><a class="btn btn-outline btn-sm"
+                                            href="form.html?id=4">Ubah</a><button
+                                            class="btn btn-danger btn-sm btn-delete" type="button">Hapus</button></div>
+                                </td>
+                            </tr>
+                            <tr data-id="5" data-nama="Paket Selapan" data-kategori="terapi" data-status="nonaktif">
+                                <td>
+                                    <div class="thumb">foto</div>
+                                </td>
+                                <td class="name">Paket Selapan</td>
+                                <td><span class="pill">Terapi</span></td>
+                                <td>Rp75.000</td>
+                                <td><label class="status"><span class="switch"><input type="checkbox" class="toggle"
+                                                aria-label="Aktifkan Paket Selapan"><span
+                                                class="track"></span></span><span
+                                            class="status-text">Nonaktif</span></label></td>
+                                <td>
+                                    <div class="actions"><a class="btn btn-outline btn-sm"
+                                            href="form.html?id=5">Ubah</a><button
+                                            class="btn btn-danger btn-sm btn-delete" type="button">Hapus</button></div>
+                                </td>
+                            </tr>
+                            <tr data-id="6" data-nama="Layanan Lain-lain" data-kategori="lainnya" data-status="aktif">
+                                <td>
+                                    <div class="thumb">foto</div>
+                                </td>
+                                <td class="name">Layanan Lain-lain</td>
+                                <td><span class="pill">Lainnya</span></td>
+                                <td>Mulai Rp10.000</td>
+                                <td><label class="status"><span class="switch"><input type="checkbox" class="toggle"
+                                                checked aria-label="Aktifkan Layanan Lain-lain"><span
+                                                class="track"></span></span><span
+                                            class="status-text">Aktif</span></label></td>
+                                <td>
+                                    <div class="actions"><a class="btn btn-outline btn-sm"
+                                            href="form.html?id=6">Ubah</a><button
+                                            class="btn btn-danger btn-sm btn-delete" type="button">Hapus</button></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="empty" id="empty">Layanan tidak ditemukan.</p>
+            </div>
+
+            <p class="table-note">Toggle = aktif/nonaktif tanpa menghapus · Hapus menampilkan dialog konfirmasi ·
+                Nonaktif tidak tampil di website</p>
+        </main>
+    </div>
+
+    <dialog class="confirm" id="dlg-delete" aria-labelledby="dlg-title">
+        <h2 id="dlg-title">Hapus layanan?</h2>
+        <p>“<span id="dlg-name">layanan</span>” akan dihapus permanen.</p>
+        <div class="dlg-actions">
+            <button class="btn btn-outline btn-sm" type="button" id="dlg-cancel">Batal</button>
+            <button class="btn btn-sm" type="button" id="dlg-confirm">Ya, Hapus</button>
+        </div>
+    </dialog>
+
+    <script src="/js/admin.js"></script>
 </body>
+
 </html>
